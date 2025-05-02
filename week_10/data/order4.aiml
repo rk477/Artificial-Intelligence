@@ -1,0 +1,21 @@
+<aiml>
+
+<!-- complete this  category using condition tages in the template-->
+
+<category>
+  <pattern>I WANT MORE HELP</pattern>
+  <template>
+    We are sorry that you are not satisfied. 
+    Please use the email address below to contact the right team who can give you more help.
+    <condition name="status">
+      <li value="dispatched">transit.enquiries@acme.com</li>
+      <li value="delivered">missing.delivery@acme.com</li>
+      <li value="not_recognised">lost.orders@acme.com</li>
+      <li value="out_of_stock">stock.info@acme.com</li>
+      <li>Please provide your order number first.</li>
+    </condition>
+  </template>
+</category>
+
+
+</aiml>
